@@ -62,17 +62,17 @@ func ExampleDeposit_positive() {
   func ExamplePaymentSources()  {
 	cards:=[]types.Card{
 		{
-			Pan:"5058",
+			PAN:"5058",
 			Active: true,
 			Balance:50,
 		},
 		{
-			Pan:"5058",
+			PAN:"5058",
 			Active: false,
 			Balance:50,
 		},
 		{
-			Pan:"5058",
+			PAN:"5058",
 			Active: true,
 			Balance:-50,
 		},

@@ -8,7 +8,7 @@ import (
 func IssueCard(currency types.Currency, color string, name string) types.Card {
 	return types.Card{
 		Id:       1000,
-		Pan:      "5058 xxxx xxxx 0001",
+		PAN:      "5058 xxxx xxxx 0001",
 		Balance:  0,
 		Currency: currency,
 		Color:    color,
@@ -71,7 +71,7 @@ func AddBonus(card *types.Card, percent int, dayslnMonth int, dayslnYear int) {
 			}
 			t:= types.PaymentSource{
 				Type:"card",
-				Number: string(card.Pan),
+				Number: string(card.PAN),
 				Balance: card.Balance,
 			}
 			payments=append(payments,t)

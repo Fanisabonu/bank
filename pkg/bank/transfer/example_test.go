@@ -1,6 +1,5 @@
 package transfer
 import ("fmt")
-import "bank/pkg/bank/types"
 func ExampleTotal()  {
 fmt.Println(Total(0))
 fmt.Println(Total(500_000))

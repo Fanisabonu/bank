@@ -9,11 +9,11 @@ const(
 	USD Currency = "USD"
 )
 
-type Pan string 
+type PAN string 
 
 type Card struct {
 	Id	int
-	Pan	Pan
+	PAN	PAN
 	Balance Money
 	MinBalance Money 
 	Currency Currency
@@ -25,5 +25,5 @@ type PaymentSource struct{
 	Type string
 	Number string 
 	Balance Money 
-		
+
 }
