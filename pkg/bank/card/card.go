@@ -1,7 +1,7 @@
 package card
 
 import (
-	"bank/pkg/bank/types"
+	"github.com/Fanisabonu/bank/pkg/bank/types"
 )
 
 //IssueCard -

@@ -27,3 +27,11 @@ type PaymentSource struct{
 	Balance Money 
 
 }
+
+type Category string
+
+type Payment struct {
+	ID       int
+	Amount   Money
+	Category Category
+}

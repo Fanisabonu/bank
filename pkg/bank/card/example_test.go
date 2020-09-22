@@ -2,7 +2,8 @@ package card
 
 import (
 	"fmt"
-	"bank/pkg/bank/types"
+	"github.com/Fanisabonu/bank/pkg/bank/types"
+
 )
 func ExampleWithdraw_positive(){
 	result := Withdraw(types.Card{Balance:10000, Active: true}, -100)
