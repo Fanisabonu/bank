@@ -2,6 +2,7 @@ package types
 
 type Money int64
 type Currency string 
+type Status string
 
 const(
 	TJS Currency = "TJS"
@@ -34,4 +35,13 @@ type Payment struct {
 	ID       int
 	Amount   Money
 	Category Category
+	Status Status
 }
+//
+const(
+	StatusOk Status= "OK"
+	StatusFail Status ="FAIL"
+	StatusInProgress Status = "INPROGRESS" 
+)
+
+
